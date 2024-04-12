@@ -46,7 +46,7 @@ public class SimularCredito extends BasePage{
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(buttonSimulateCredit)));
 
         clickOnWebElement(buttonSimulateCredit);
-        scrollWindow(0,600);
+        scrollOnWindow(0,600);
     }
 }
 

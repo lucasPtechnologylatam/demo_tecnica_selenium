@@ -81,17 +81,6 @@ public class BasePage {
         Find(locator).sendKeys(sendKeys);
     }
 
-    //metodo para hacer scroll en una pagina
-    public static void scrollWindow(int xOffset, int yOffset) {
-        try {
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            // Desplaza la ventana por la cantidad de píxeles específica
-            js.executeScript("window.scrollBy(arguments[0],arguments[1])", xOffset, yOffset);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     //metodo para apretar letra escape, scripts
     public static void pressEscapeKey() {
         try {

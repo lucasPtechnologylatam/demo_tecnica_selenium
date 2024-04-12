@@ -1,7 +1,7 @@
 Feature: Navigation
 
 Scenario: I go to url to the website coopeuch
-    Given I go to the website to Coopeuch
+    Given I go to the website to Coopeuchs
 
 Scenario: I do a login in Coopeuch en Linea
     Given I click on input username
