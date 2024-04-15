@@ -29,6 +29,13 @@ public class BasePage {
         BasePage.driver = driver;
     }
 
+    //encuentra y devuelve un WebElement en la pagina usando un xpath relativo, esperando que este presente en el DOM.
+    public WebElement Find(String locator) throws NoSuchElementException {
+        // Esperar hasta que el elemento esté presente en el DOM y sea visible
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+        return element;
+    }
+    
     //metodo parametrizado para navegar a la url 
     public static void navigateToUrl(String url){
         driver.get(url);
@@ -62,12 +69,7 @@ public class BasePage {
         driver.quit();
     }
 
-    //encuentra y devuelve un WebElement en la pagina usando un xpath relativo, esperando que este presente en el DOM.
-    public WebElement Find(String locator) throws NoSuchElementException {
-        // Esperar hasta que el elemento esté presente en el DOM y sea visible
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
-        return element;
-    }
+    
 
     // metodo para hacer click en un elemento web
     public void clickOnWebElement(String locator){

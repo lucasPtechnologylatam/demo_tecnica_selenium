@@ -1,14 +1,14 @@
 Feature: Navigation
 
 Scenario: I go to url to the website coopeuch
-    Given I go to the website to Coopeuchs
+    Given I go to the website to Coopeuch
 
 Scenario: I do a login in Coopeuch en Linea
     Given I click on input username
     And I send my username to input Ingresa tu Rut
     And I click on input password
     And I send my password to input Ingresa tu clave internet
-    Then I cick on button Ingresar
+    Then I click on button Ingresar
 
 Scenario: I choose a simulate credits on my products
     Given I click on button Credito Consumo

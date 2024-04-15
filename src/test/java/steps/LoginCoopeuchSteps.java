@@ -28,7 +28,7 @@ public class LoginCoopeuchSteps {
         loginCoopeuch.sendKeysToPassword("A1234567");
     }
 
-    @Then("I cick on button Ingresar")
+    @Then("I click on button Ingresar")
     public void clickOnButtonLogin(){
         loginCoopeuch.clickOnButtonIngresar();
     }
